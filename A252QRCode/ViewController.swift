@@ -9,9 +9,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var theImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        theImageView.image = generrateQRCode(from: "Hello World",size: theImageView.bounds.size)
     }
 
 
